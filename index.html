@@ -33,8 +33,43 @@
           />
         </label>
       </fieldset>
-      <fieldset></fieldset>
-      <fieldset></fieldset>
+      <fieldset>
+        <label for="account-type">
+          <input type="radio" name="account-type" /> Personal Account
+        </label>
+        <label for="account-type"
+          ><input type="radio" name="account-type" /> Business Account
+        </label>
+        <label for="terms-and-conditions"
+          ><input type="checkbox" required id="terms-and-conditions" /> I accept
+          the
+          <a href="https://www.freecodecamp.org/news/terms-of-service/">
+            terms and conditions</a
+          >
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture"
+          >Upload a profile pictrue:
+          <input type="file" name="profile-picture" />
+        </label>
+        <label for="age"
+          >Input your age (years):
+          <input type="number" min="13" max="120" />
+        </label>
+        <label for="referrer">How did you hear about us? </label>
+        <select id="referrer">
+          <option value="">(select one)</option>
+          <option value="1">freecodecamp News</option>
+          <option value="2">freecodecamp YouTube Channel</option>
+          <option value="3">freecodecamp Forum</option>
+          <option value="4">Other</option>
+        </select>
+        <label for="bio"
+          >Provide a Bio:
+          <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </label>
+      </fieldset>
       <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
