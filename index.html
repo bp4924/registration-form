@@ -23,12 +23,19 @@
           >Email: <input type="email" id="email" required />
         </label>
         <label for="new-password"
-          >Create Password: <input type="password" id="new-password" required />
+          >Create Password:
+          <input
+            type="password"
+            id="new-password"
+            required
+            minlength="8"
+            pattern="[a-z0-5]{8,}"
+          />
         </label>
       </fieldset>
       <fieldset></fieldset>
       <fieldset></fieldset>
-      <input type="submit" value="submit" />
+      <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
 </html>
