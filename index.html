@@ -13,19 +13,20 @@
       <fieldset>
         <label for="first-name"
           >First Name:
-          <input type="text" id="first-name" required />
+          <input type="text" name="first-name" id="first-name" required />
         </label>
         <label for="last-name"
           >Last Name:
-          <input type="text" id="last-name" required />
+          <input type="text" name="last-name" id="last-name" required />
         </label>
         <label for="email"
-          >Email: <input type="email" id="email" required />
+          >Email: <input type="email" name="email" id="email" required />
         </label>
         <label for="new-password"
           >Create Password:
           <input
             type="password"
+            namae="new-password"
             id="new-password"
             required
             minlength="8"
@@ -41,8 +42,13 @@
           ><input type="radio" name="account-type" /> Business Account
         </label>
         <label for="terms-and-conditions"
-          ><input type="checkbox" required id="terms-and-conditions" /> I accept
-          the
+          ><input
+            type="checkbox"
+            required
+            name="id"
+            id="terms-and-conditions"
+          />
+          I accept the
           <a href="https://www.freecodecamp.org/news/terms-of-service/">
             terms and conditions</a
           >
@@ -55,10 +61,10 @@
         </label>
         <label for="age"
           >Input your age (years):
-          <input type="number" min="13" max="120" />
+          <input type="number" name="age" id="age" min="13" max="120" />
         </label>
         <label for="referrer">How did you hear about us? </label>
-        <select id="referrer">
+        <select name="referrer" id="referrer">
           <option value="">(select one)</option>
           <option value="1">freecodecamp News</option>
           <option value="2">freecodecamp YouTube Channel</option>
@@ -67,7 +73,13 @@
         </select>
         <label for="bio"
           >Provide a Bio:
-          <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+          <textarea
+            name="bio"
+            id="bio"
+            cols="30"
+            rows="3"
+            placeholder="I like coding on the beach ..."
+          ></textarea>
         </label>
       </fieldset>
       <input id="submit" type="submit" value="Submit" />
