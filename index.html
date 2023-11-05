@@ -35,28 +35,17 @@
         </label>
       </fieldset>
       <fieldset>
-        <label for="account-type">
+        <legend>Account type (required)</legend>
+        <label for="personal-account">
           <input type="radio" name="account-type" class="inline" /> Personal
           Account
         </label>
-        <label for="account-type"
+        <label for="business-account"
           ><input type="radio" name="account-type" class="inline" /> Business
           Account
         </label>
-        <label for="terms-and-conditions"
-          ><input
-            type="checkbox"
-            required
-            name="id"
-            class="inline"
-            id="terms-and-conditions"
-          />
-          I accept the
-          <a href="https://www.freecodecamp.org/news/terms-of-service/">
-            terms and conditions</a
-          >
-        </label>
       </fieldset>
+      <fieldset></fieldset>
       <fieldset>
         <label for="profile-picture"
           >Upload a profile pictrue:
@@ -85,6 +74,19 @@
           ></textarea>
         </label>
       </fieldset>
+      <label for="terms-and-conditions"
+        ><input
+          type="checkbox"
+          required
+          name="id"
+          class="inline"
+          id="terms-and-conditions"
+        />
+        I accept the
+        <a href="https://www.freecodecamp.org/news/terms-of-service/">
+          terms and conditions</a
+        >
+      </label>
       <input id="submit" type="submit" value="Submit" />
     </form>
   </body>
